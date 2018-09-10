@@ -13,21 +13,25 @@
 
 */
 /* Structural Styles */
+/* the entire page will have a blue-ish background */
 html {
     background-color: rgb(173, 189, 227);
 }
 
+/* anything in the body will have a light yellow-ish color for its background, and be in the selected font */
 body {
     background-color: rgb(227, 210, 173);
     font-family: 'Century Gothic', sans-serif;
 }
 
+/* anything in the footer will have a yellow background, and space from the top and bottom */
 footer {
     background-color: rgb(208, 184, 109);
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+/* the addres bar will have smaller fonts, that look normal and are in the center, offset form the top and bottom */
 address {
     font-weight: normal;
     font-size: 0.9em;
@@ -37,59 +41,82 @@ address {
 }
 
 /* Heading Styles */
+/* h2 that are in h1 will look normal */
 h1,
 h2 {
     font-weight: normal;
 }
 
 /* Navigation Styles */
+/* anything in an unordered list will have no list style, and be slightly smaller, with a line height of 2em */
 nav>ul {
     list-style: none;
     line-height: 2em;
     font-size: 0.9em;
 }
 
+/* unordered lists that exist without something currently happening to them, will have no decoration, and be blue */
 nav>ul a:visited,
 nav>ul a:link {
     text-decoration: none;
     color: rgb(43, 59, 125);
 }
 
+/* unordered lists that are being clicked on or hovered on will be red */
 nav>ul a:active,
 nav>ul a:hover {
     color: rgb(212, 35, 35);
 }
 
 /* Article Styles */
+/* headings in articles that are put in the ID tour_summary will be larger and have less spacing */
 article#tour_summary h1 {
     font-size: 2.2em;
     letter-spacing: 0.2em;
 }
 
+/* paragraphs in articles with the ID will be slightly larger */
 article#tour_summary p {
     font-size: 1.1em;
 }
 
+/* anything in the set div, which is the first line of the main text, will be slightly larger and have smaller capitalizations */
 div#scl {
     font-size: 1.2em;
     font-variant: small-caps;
 }
 
 /* Aside Styles */
+/* headings in the correct aside will be slightly larger */
 aside#tour_itinerary h1 {
     font-size: 1.2em;
 }
 
+/* less important headings in the correct aside will be slightly smaller */
 aside#tour_itinerary h2 {
     font-size: 0.9em;
 }
 
-aside#tour_itinerary h2:nth-of-type(odd) {
-    color: rgb(79, 91, 40)
+/* any headings or paragraphs in the itinerary aside, that are odd, will be green */
+aside#tour_itinerary h2,
+aside#tour_itinerary p:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
 }
 
-aside#tour_itinerary h2:nth-of-type(even) {
-    color: rgb(81, 95, 175)
+/* any headings or paragraphs in the itinerary aside, that are even, will be blue */
+aside#tour_itinerary h2,
+aside#tour_itinerary p:nth-of-type(even) {
+    color: rgb(81, 95, 175);
 }
 
 /* Blockquote Styles */
+/* blockquotes will have a blue-ish background and a mostly opaque white text */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgba(255, 255, 255, .65);
+}
+
+/* the paragraphs in blockquotes will be offset from the top and bottoms */
+blockquote p {
+    padding: 2.5px 10px;
+}
