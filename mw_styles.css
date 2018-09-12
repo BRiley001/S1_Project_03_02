@@ -98,13 +98,13 @@ aside#tour_itinerary h2 {
 }
 
 /* any headings or paragraphs in the itinerary aside, that are odd, will be green */
-aside#tour_itinerary h2,
+aside#tour_itinerary h2:nth-of-type(odd),
 aside#tour_itinerary p:nth-of-type(odd) {
     color: rgb(79, 91, 40);
 }
 
 /* any headings or paragraphs in the itinerary aside, that are even, will be blue */
-aside#tour_itinerary h2,
+aside#tour_itinerary h2:nth-of-type(even),
 aside#tour_itinerary p:nth-of-type(even) {
     color: rgb(81, 95, 175);
 }
